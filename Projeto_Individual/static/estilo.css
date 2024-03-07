@@ -1,0 +1,45 @@
+*{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    text-align: center;
+    background-image: url("https://onepieceex.net/wp-content/uploads/2023/07/egg.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.onePiece-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin: 10px;
+}
+
+.form-group{
+        margin: 2px;
+        display: grid;
+        grid-template-columns: 0.9fr 1fr;
+        max-width: 400px;
+        label {
+            margin-top: 5px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        input,select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+}
+
+.botao{
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+}

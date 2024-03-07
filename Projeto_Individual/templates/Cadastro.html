@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/estilo.css">
+    <title>Title</title>
+
+</head>
+<body>
+    <div class="onePiece-card">
+        <div class="page-header">
+            <h1>{{ Titulo }}</h1>
+        </div>
+        <form action="/criar" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <label for="ID-onePiece">ID: </label>
+                    <input type="number" name="ID-onePiece" id="ID-onePiece" required>
+                </div>
+                <div class="form-group">
+                    <label for="Nome">Nome do personagem: </label>
+                    <input type="text" name="Nome" id="Nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="Tripulacao">Tripulação:</label>
+                    <select name="Tripulacao" id="Tripulacao" required>
+                        <option value=""selected>Selecione uma opção</option>
+                        <option value="Chapeu de Palha">Chapéu de Palha</option>
+                        <option value="Barba Branca">Barba Branca</option>
+                        <option value="Barba Negra">Barba Negra</option>
+                        <option value="Marinha">Marinha</option>
+                        <option value="Revolucionario">Revolucionário</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Recompensa">Recompensa: </label>
+                    <input type="number" name="Recompensa" id="Recompensa" required>
+                </div>
+                <div class="form-group">
+                    <label for="FrutadoDiabo">Fruta do diabo</label>
+                    <input type="text" name="FrutadoDiabo" id="FrutadoDiabo">
+                </div>
+                <button type="submit" class="botao">Enviar</button>
+                <button type="reset" class="botao">Resetar</button>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>

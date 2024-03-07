@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/estilo.css">
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+    <div>
+        <h1>{{ Titulo }}</h1>
+    </div>
+    {% for Personagem in listaPersonagem %}
+        <div class="onePiece-card">
+            <h2>Nome:{{ Personagem.nome }}</h2>
+            <p>Tripulacao: {{ Personagem.tripulacao }}</p>
+            <p>Recompensa: {{ Personagem.recompensa }} berries</p>
+            <p>FrutadoDiabo: {{ Personagem.frutadoDiabo }}</p>
+            <br>
+        <a href="/excluir/{{ Personagem.idOnePiece }}">Excluir</a>
+        <a href="/editar/{{ Personagem.idOnePiece }}">Editar</a>
+        </div>
+    {%endfor%}
+</body>
+</html>
